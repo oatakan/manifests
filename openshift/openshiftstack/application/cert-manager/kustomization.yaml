@@ -11,7 +11,8 @@ resources:
 # This cert-manager was downloaded from cert-manager github releases
 #- ../../../../common/cert-manager/cert-manager/base
 - cert-manager-v1.5.yaml
-- ../../../../common/cert-manager/kubeflow-issuer/base
+#Changed this to include v1, v1alpha2 is obsolete
+- cluster-issuer.yaml
 
 
 patches:
