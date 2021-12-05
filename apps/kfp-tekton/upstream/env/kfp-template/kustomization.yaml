@@ -14,19 +14,19 @@ patchesStrategicMerge:
   - viewer-crd.yaml
 
 images:
-  - name: docker.io/aipipeline/api-server
+  - name: gcr.io/aipipeline/api-server
     newTag: 0.8.0
-  - name: docker.io/aipipeline/persistenceagent
+  - name: gcr.io/aipipeline/persistenceagent
     newTag: 0.8.0
-  - name: docker.io/aipipeline/frontend
+  - name: gcr.io/aipipeline/frontend
     newTag: 0.8.0
-  - name: docker.io/aipipeline/metadata-writer
+  - name: gcr.io/aipipeline/metadata-writer
     newTag: 0.8.0
-  - name: docker.io/aipipeline/scheduledworkflow
+  - name: gcr.io/aipipeline/scheduledworkflow
     newTag: 0.8.0
-  - name: docker.io/aipipeline/cache-server
+  - name: gcr.io/aipipeline/cache-server
     newTag: 0.8.0
-  - name: docker.io/aipipeline/pipelineloop-controller
+  - name: gcr.io/aipipeline/pipelineloop-controller
     newTag: 0.8.0
-  - name: docker.io/aipipeline/pipelineloop-webhook
+  - name: gcr.io/aipipeline/pipelineloop-webhook
     newTag: 0.8.0

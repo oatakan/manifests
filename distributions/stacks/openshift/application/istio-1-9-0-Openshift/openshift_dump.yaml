@@ -4679,7 +4679,7 @@ data:
         },
         "enabled": true,
         "externalIstiod": false,
-        "hub": "docker.io/istio",
+        "hub": "gcr.io/istio",
         "imagePullPolicy": "",
         "imagePullSecrets": [],
         "istioNamespace": "istio-system",
@@ -5633,7 +5633,7 @@ spec:
         # This container installs the Istio CNI binaries
         # and CNI network config file on each node.
         - name: install-cni
-          image: "docker.io/istio/install-cni:1.9.2"
+          image: "gcr.io/istio/install-cni:1.9.2"
           livenessProbe:
             httpGet:
               path: /healthz
@@ -5665,7 +5665,7 @@ spec:
             - mountPath: /host/etc/cni/net.d
               name: cni-net-dir
         - name: repair-cni
-          image: "docker.io/istio/install-cni:1.9.2"
+          image: "gcr.io/istio/install-cni:1.9.2"
 
           command: ["/opt/cni/bin/istio-cni-repair"]
           env:
@@ -5836,7 +5836,7 @@ spec:
           value: sni-dnat
         - name: ISTIO_META_CLUSTER_ID
           value: Kubernetes
-        image: docker.io/istio/proxyv2:1.9.2
+        image: gcr.io/istio/proxyv2:1.9.2
         name: istio-proxy
         ports:
         - containerPort: 15020
@@ -5992,7 +5992,7 @@ spec:
       serviceAccountName: istio-ingressgateway-service-account
       containers:
         - name: istio-proxy
-          image: "docker.io/istio/proxyv2:1.9.2"
+          image: "gcr.io/istio/proxyv2:1.9.2"
           ports:
             - containerPort: 15021
               protocol: TCP
@@ -6277,7 +6277,7 @@ spec:
           value: Kubernetes
         - name: EXTERNAL_ISTIOD
           value: "false"
-        image: docker.io/istio/pilot:1.9.2
+        image: gcr.io/istio/pilot:1.9.2
         name: discovery
         ports:
         - containerPort: 8080

@@ -7560,7 +7560,7 @@ data:
         },
         "enabled": true,
         "externalIstiod": false,
-        "hub": "docker.io/istio",
+        "hub": "gcr.io/istio",
         "imagePullPolicy": "",
         "imagePullSecrets": [],
         "istioNamespace": "istio-system",
@@ -8858,7 +8858,7 @@ spec:
           value: cni.istio.io/uninitialized
         - name: REPAIR_BROKEN_POD_LABEL_VALUE
           value: "true"
-        image: docker.io/istio/install-cni:1.11.0
+        image: gcr.io/istio/install-cni:1.11.0
         livenessProbe:
           httpGet:
             path: /healthz
@@ -8954,7 +8954,7 @@ spec:
       serviceAccountName: istio-ingressgateway-service-account
       containers:
         - name: istio-proxy
-          image: "docker.io/istio/proxyv2:1.11.0"
+          image: "gcr.io/istio/proxyv2:1.11.0"
           ports:
             - containerPort: 15021
               protocol: TCP
@@ -9176,7 +9176,7 @@ spec:
         fsGroup: 1337
       containers:
         - name: discovery
-          image: "docker.io/istio/pilot:1.11.0"
+          image: "gcr.io/istio/pilot:1.11.0"
           args:
           - "discovery"
           - --monitoringAddr=:15014

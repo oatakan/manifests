@@ -19,15 +19,15 @@ resources:
   # Katib webhooks.
   - ../../components/webhook/
 images:
-  - name: docker.io/kubeflowkatib/katib-controller
-    newName: docker.io/kubeflowkatib/katib-controller
+  - name: gcr.io/kubeflowkatib/katib-controller
+    newName: gcr.io/kubeflowkatib/katib-controller
     newTag: v0.11.0
-  - name: docker.io/kubeflowkatib/katib-db-manager
-    newName: docker.io/kubeflowkatib/katib-db-manager
+  - name: gcr.io/kubeflowkatib/katib-db-manager
+    newName: gcr.io/kubeflowkatib/katib-db-manager
     newTag: v0.11.0
-  - name: docker.io/kubeflowkatib/katib-ui
-    newName: docker.io/kubeflowkatib/katib-ui
+  - name: gcr.io/kubeflowkatib/katib-ui
+    newName: gcr.io/kubeflowkatib/katib-ui
     newTag: v0.11.0
-  - name: docker.io/kubeflowkatib/cert-generator
-    newName: docker.io/kubeflowkatib/cert-generator
+  - name: gcr.io/kubeflowkatib/cert-generator
+    newName: gcr.io/kubeflowkatib/cert-generator
     newTag: v0.11.0

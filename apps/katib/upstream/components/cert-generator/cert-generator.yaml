@@ -12,7 +12,7 @@ spec:
       serviceAccountName: katib-cert-generator
       containers:
         - name: cert-generator
-          image: docker.io/kubeflowkatib/cert-generator
+          image: gcr.io/kubeflowkatib/cert-generator
           imagePullPolicy: Always
           env:
             - name: KATIB_CORE_NAMESPACE

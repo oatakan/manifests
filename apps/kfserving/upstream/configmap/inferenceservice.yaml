@@ -34,7 +34,7 @@ data:
             "multiModelServer": false
           },
           "v2": {
-            "image": "docker.io/seldonio/mlserver",
+            "image": "gcr.io/seldonio/mlserver",
             "defaultImageVersion": "0.2.1",
             "supportedFrameworks": [
               "sklearn"
@@ -52,7 +52,7 @@ data:
             "multiModelServer": false
           },
           "v2": {
-            "image": "docker.io/seldonio/mlserver",
+            "image": "gcr.io/seldonio/mlserver",
             "defaultImageVersion": "0.2.1",
             "supportedFrameworks": [
               "xgboost"
