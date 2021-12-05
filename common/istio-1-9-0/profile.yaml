@@ -51,7 +51,7 @@ spec:
           requests:
             cpu: 10m
             memory: 100Mi
-  hub: gcr.io/istio
+  hub: gcr.io/istio-release
   meshConfig:
     accessLogFile: /dev/stdout
     defaultConfig:
